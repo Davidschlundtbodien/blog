@@ -11,7 +11,13 @@ const EditScreen = ({navigation}) => {
   );
 
 
-  return <BlogPostForm />
+  return (
+    <BlogPostForm 
+      initialValues={{title: blogPost.title, content: blogPost.content}}
+      onSubmit={(title, content) => {
+      }} 
+    />
+  );
 };
 
 const style = StyleSheet.create({});
